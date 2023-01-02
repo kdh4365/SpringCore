@@ -12,6 +12,10 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+// @Bean만 사용해도 빈으로 등록이 되지만, 싱글톤은 보장하지 않는다.
+// 따라서 @Configuration을 사용하여 싱글톤을 설정해준다.
+// @Autowired가 있지만 그것은 나중에 배우도록 하자.
+
 @Configuration
 public class AppConfig {
 
